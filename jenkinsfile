@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         SSH_CRED = 'node-app-key'
-        SERVER_IP = '54.67.84.65'
+        SERVER_IP = '3.110.114.21'
         REMOTE_USER = 'ubuntu'
         APP_DIR = '/home/ubuntu/pythonapp'
     }
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git url: 'https://github.com/iamtruptimane/pythonapp.git', branch: 'master'
+                git url: 'https://github.com/VishalSC4/python-app.git', branch: 'main'
             }
         }
 
